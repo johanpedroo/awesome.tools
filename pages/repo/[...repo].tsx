@@ -22,11 +22,9 @@ const AwesomePage: NextPage<{
 };
 
 
-export async function getStaticProps({params, ...others}: GetStaticPropsContext<{ repo: string[] }>
+export async function getStaticProps({params}: GetStaticPropsContext<{ repo: string[] }>
 ) {
   try {
-    console.log(params)
-    console.log(others)
     await dbConnect();
     const repo: string | null = (params?.repo?.join("/") || null);
 
@@ -57,7 +55,7 @@ export async function getStaticPaths() {
     list: {$slice: 50}
   }).exec()
   return {
-    paths: awesome.list?.filter(({isAwesome}: any) => isAwesome).map(({repo, author}: any) => ({params: {repo: [author,repo]}})),
+    paths: awesome?.list?.filter(({isAwesome}: any) => isAwesome).map(({repo, author}: any) => ({params: {repo: [author,repo]}})),
     fallback: 'blocking',
   }
 }
