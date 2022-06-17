@@ -1,0 +1,6 @@
+node_modules
+.next
+.vercel
+.idea
+.vscode
+.env

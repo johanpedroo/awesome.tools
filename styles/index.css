@@ -1,0 +1,11 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

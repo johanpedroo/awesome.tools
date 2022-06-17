@@ -1,0 +1,39 @@
+{
+  "name": "awesome-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "stage": "yarn build; yarn start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
+    "axios": "^0.27.2",
+    "framer-motion": "6.3.11",
+    "is_js": "^0.9.0",
+    "mongoose": "^6.3.8",
+    "node-html-parser": "^5.3.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
+    "react-infinite-scroll-component": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.10",
+    "@types/is": "^0.0.21",
+    "@types/node": "^16.11.39",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "next": "^12.1.6",
+    "typescript": "^4.7.3"
+  },
+  "license": "ISC"
+}
