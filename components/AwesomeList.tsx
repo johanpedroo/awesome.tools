@@ -55,7 +55,7 @@ const AwesomeList: React.FC<any> = ({
                 dataLength={state.length}
                 hasMore={state.length < asyncData.length}
                 next={() => setPage((page) => page + 1)}
-                loader={<h4>Carregando...</h4>}
+                loader={<h4>Loading...</h4>}
             >
                 <SimpleGrid columns={useBreakpointValue({xs: 1, sm:2, md: 3, lg: 4, xl:5})} gap={2} justifyContent={"center"}>
                     {state.map?.((item: any, index: number) => (
