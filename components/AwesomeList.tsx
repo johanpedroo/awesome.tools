@@ -35,7 +35,7 @@ const AwesomeList: React.FC<any> = ({
     useEffect(() => {
       const uri = query?.q ? `/api/awesome/search?q=${query.q}` : `/api/awesome/list?repo=${repo}`
       axios.get(uri).then(res => {
-        setAsyncData((state: any[]) => state.concat(res.data))
+        setAsyncData(() => data.concat(res.data))
       })
     }, [repo, query.q, data]);
 
