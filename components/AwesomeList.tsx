@@ -37,7 +37,7 @@ const AwesomeList: React.FC<any> = ({
       axios.get(uri).then(res => {
         setAsyncData((state: any[]) => state.concat(res.data))
       })
-    }, [repo, query.q]);
+    }, [repo, query.q, data]);
 
     useEffect(fetchMoreData, [page, asyncData]);
 
